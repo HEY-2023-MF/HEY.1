@@ -10,6 +10,7 @@
 		background-size: cover;}
 		tr{text-align: center}
   </style>
+  <!-- Index -->
 	<link rel="stylesheet" href="">
 	<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
