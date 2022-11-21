@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Javsascript Task App</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+     <style type="text/css">
+         .content-table {
+  align-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(161, 124, 221 );
+  border-radius:5px;
+}
+
+.letra{
+  font-size: 15px;
+  border-radius:20px;
+}
+    body {background-image: url(wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;}
+    tr{text-align: center}
+  </style>
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask" class="content-table">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Añadir Titulo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">GUARDAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

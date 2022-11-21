@@ -1,0 +1,321 @@
+<!--Hecho por: Gabriela Flores-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Clase ocho Bootstrap - Ejercicio diez - Plantilla descargable</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <style media="screen">
+      /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .questions{
+      text-align: center;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+    </style>
+
+  </head>
+  <body>
+    
+<header>
+  <!--Apartado de barra de navegación-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nature</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">¿Quiénes somos?</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!--Apartado de carrusel-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="carrusel - imagenes2.jpg"></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Nature</h1>
+            <p>Que no se deje llevar por lo que decimos, pruébelo usted mismo</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Conoce más</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="carrusel - imagenes.jpg"></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>¿Qué es "Nature"?</h1>
+            <p>Una experencia de lujo</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Leer más</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="carrusel - imagenes1.jpg"></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>¿Cuál es nuestro propósito?</h1>
+            <p>¡Un jabón tan bueno que alegra tu estado de ánimo!</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Nuestra galería</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Apartado de parte de marketing-->
+  <div class="container marketing">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="mini1.jpg" alt="Generic placeholder image" width="140" height="140">
+        <h2>Lavanda</h2>
+        <p>Destaca por sus florecillas de color violeta y con un maravilloso perfume. Esta planta se ha utilizado por sus propiedades medicinales desde hace siglos y ahora es también un ingrediente habitual en cosmética.</p>
+        <p><a class="btn btn-secondary" href="#">Leer más &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="mini2.jpg" alt="Generic placeholder image" width="140" height="140">
+        <h2>Arreglos</h2>
+        <p>Los arreglos de nuestros jabones incluyen la opción de realizarse en una caja o jabonera personal, mientras que los convecionales generalmente son enviados en una envoltura.</p>
+        <p><a class="btn btn-secondary" href="#">Leer más &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="mini3.jpg" alt="Generic placeholder image" width="140" height="140">
+        <h2>Granos</h2>
+        <p>Gracias a los granos enteros como el centeno o la avena conseguimos una cantidad importante de fibra, fundamental para favorecer el tránsito intestinal, así como para perder peso, ya que tienen efecto saciante.</p>
+        <p><a class="btn btn-secondary" href="#">Leer más &raquo;</a></p>
+      </div>
+    </div>
+
+
+    <!--Apartado de galería-->
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><span class="text-muted">Jabón de leche de cabra</span></h2>
+        <p class="lead">El uso habitual de nuestros jabones naturales de leche de cabra, alivian los síntomas de las personas que padecen enfermedades de la piel como la psoriasis, eleczema o la dermatitis atópica, ya que son muy suaves y se pueden utilizar para el rostro, el cuerpo y las manos. Limpian, desmaquillan y aportan nutrición y humectación a la piel.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="productos1.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Jabón de avena<span class="text-muted"></span></h2>
+        <p class="lead">Este jabón tiene un efecto astringente, ayuda a reducir los niveles de grasa en la piel, por lo que es muy útil para tratar espinillas, barros y otras imperfecciones relacionadas con la acumulación de sebo en el cutis.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" src="productos2.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Jabón de aceite de oliva<span class="text-muted"></span></h2>
+        <p class="lead">Gracias a su base en Aceite de Oliva Virgen Extra, ejerce una acción hidratante y regeneradora de las células. Asimismo, devuelve la elasticidad a la piel y alivia el picor y el escozor, así como los sarpullidos o las quemaduras solares.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="productos3.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Fin del apartado de galería-->
+
+  </div>
+
+  <!--Apartado de acordeón-->
+  <section>
+    <h3 class="questions">Preguntas frecuentes✋</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Cuánto tiempo me dura un jabón?
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Todos los jabones contienen glicerina de forma natural y mantecas y aceites nutritivos, esto hace que nuestra piel se sienta realmente suave pero también atrapa fácilmente la humedad del ambiente y al contacto con el agua puede gastarse más rápido que un jabón comercial, pero si lo cuidamos como debe de ser nos dura más. <br><br> Si bien los tiempos aproximados dependen mucho del uso y cuidados que le des, puedes guiarte con estos tiempos: <br><br> ●Si usas el jabón solo para manos y rostro el jabón puede durarte más de un mes. <br> ●Si usas el jabón para bañarte te puede durar 15 días a 20 días.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              ¿Cuáles son los beneficios de los jabones artesanales?
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sabemos que existen tipos de piel muy diferentes entre sí. Algunas pueden ser más delicadas y sensibles, otras pueden tener alta tendencia al acné o resecarse fácilmente. <br> Así que, teniendo en cuenta estos diferentes tipos de piel y sus fototipos, los jabones artesanales tienen la capacidad de combinar varios tipos de aceites, flores o hierbas que se mezclan entre sí, confiriendo virtudes cosméticas especiales para crear jabones “personalizados”, ayudando a mantener cada piel en óptimas condiciones.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ¿Cuál es la diferencia entre estos jabones y los comerciales?
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Los jabones caseros están elaborados con grasas y álcali para crear la reacción química de saponificación. Lo que encontramos hoy en día en tiendas comerciales no son realmente jabón, la gran mayoría son detergentes con ingredientes abrasivos, fuertes, contaminantes o hasta controversiales.<br>
+
+      Los jabones caseros elaborados con un buen balance de grasas dejan la piel suave y cumplen una sola función: limpiar.</div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <hr class="featurette-divider">
+  <!--Apartado de footer-->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; Nature 2022 - Todos los derechos reservados &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
+
+
+
